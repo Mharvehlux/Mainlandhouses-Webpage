@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   <link rel="icon" href="home icon.png" type="image/x-icon">
+
+    <title>Catalog Page </title>
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- popper library -->
+	<script src="http://cdnjs.cloudfare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<!-- awesome font -->
+	<link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+
+	<!-- bootstrap offline link-->
+
+	<script type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script src="js/bootstrap.min.js"> </script>
+
+
+
+	<!--landing div style sheet  -->
+	<style>
+
+		.main-text{
+			text-shadow: 5px 5px 10px black;
+		}
+
+
+		.searchbox{
+			width: 400px;
+			background-color: white;
+			padding: 10px;
+			font-family: lato		;
+			font-size:17.36px;
+			border: 2px solid grey;
+			display: inline;
+			color:white;
+			outline: none;
+			border-radius:2px;
+			height: 50px;
+		}
+
+		.selectbox{
+			width: 400px;
+			background-color: white;
+		
+			padding: 10px;
+			font-family: lato		;
+			font-size:17.36px;
+			border: 2px solid grey;
+			display: inline;
+			outline: none;
+			border-radius:2px;
+			height: 50px;
+
+		}
+
+
+
+
+
+		.searchsubmit{
+			cursor: pointer;
+			font-family: lato;
+			padding: 1px 20px;
+			border-radius:2px;
+			background-color:black;
+			border: none;
+			outline: none;
+			display: inline;
+			height: 50px;
+		
+			
+		}
+
+
+
+		
+		/* for screens <= 768px */
+		@media only screen and (max-width: 768px){
+		.searchbox{
+			max-width: 200px;
+			font-size: 10px;
+			padding: 5px;
+			margin-right:1px;
+		}
+
+		.selectbox{
+			 max-width: 120px;
+			 font-size: 10px;
+			 padding: 5px;
+			 margin-left: 1px;
+		}
+
+		.searchsubmit{
+			
+			padding: 5px;
+			width: 60px;
+		}
+
+		}
+
+
+		/*for screen <= 375px*/
+
+		@media only screen and (max-width: 375px){
+		.searchbox{
+			max-width: 150px;
+			font-size: 10px;
+			padding: 5px;
+			margin-right:1px;
+		}
+		.selectbox{
+			 max-width: 120px;
+			 font-size: 10px;
+			 padding: 5px;
+			 margin-left: 1px;
+		}
+
+		.searchsubmit{
+			padding: 5px
+			width: 20px;
+			
+		}
+
+		}	
+
+						
+	</style>
+
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+	
+
+	<!-- navigation bar section -->
+	<nav class="navbar navbar-expand-md navbar-dark" style="background-color: black; height: 70px; ">
+		<a class="navbar-brand" href="new_index"> 
+		 	<img src="logo.png" alt="Logo" id= 'icon1' style="width:170px;">
+		</a>
+			
+
+		<button class ="navbar-toggler" type ="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="border: none;   ">
+	
+			<span class="navbar-toggler-icon" style ="width:20px;"> </span>
+
+		</button>
+
+			
+		<div class="collapse navbar-collapse " id="collapsibleNavbar" style=  "width:100%; " >
+			<ul class="navbar-nav" style= "margin:auto;">
+					<li class ="nav-item" style=";">
+						<a class= "nav-link" href="new_index" style="font-family: lato; color: white;"> Home </a>
+					</li>
+
+					<li class ="nav-item" style="margin-left:60px;">
+						<a class= "nav-link" href="#" style="font-family: Helvetica; font-weight:200px; color: white;"> Buy </a>
+					</li>
+
+					<li class ="nav-item" style="margin-left:60px;">
+						<a class= "nav-link" href="#" style="font-family: lato;color: white;"> Sell </a>
+					</li>
+
+					<li class ="nav-item" style="margin-left:60px;">
+						<a class= "nav-link" href="#" style="font-family: lato; color: white;"> Mortgage Calculator </a>
+					</li>
+					 
+			</ul>
+
+
+			<a class="nav-icon" href="tel: +2348136528554"><img src="telephone.png" alt="telephone"  style= "width:25px; float:right; margin-left: 22px;" >
+            </a>
+
+			<a class="nav-icon" href="#cart"><img src="shopping-cart.png" alt="shopping-cart"  style= "width:25px; float:right; margin-left: 22px;" >
+            </a>
+ 
+            <a class="nav-icon" href="#searchbox"><img src="search.png"alt="search" style= "width:25px; float:right; margin-left: 22px;">
+            </a>
+				
+		</div>
+			
+	</nav>
+
+	<!-- search nbar -->
+	<div style="background-color: grey; border-bottom: 1px solid #cccccc; margin-top: 0px;  padding: 0px;">
+
+				<form class= "align-middle" style="color: white; font-size: 4vw; font-family:Lato; text-align:center; padding: 10px; 		">
+					<input id= "searchbox" class= " align-middle searchbox" type="text" name="" placeholder="Search for a city you want to live in"> 
+
+					</input>
+
+					<select class= ' align-middle 	selectbox'>
+						 <option selected style="color:grey; font-family:Lato; border-bottom-style: 1px solid grey; margin-top: 5px; padding: 5px 0px;">
+						 			-price range[=N=]-
+						 </option>
+
+						 <option style="color:grey; font-family:Lato; border-bottom-style: 1px solid grey; margin-top: 5px; padding: 5px 0px;">
+						 			10,000,000-20,000,000
+						 </option>
+
+						 <option style="color:grey;  font-family:Lato; border-bottom-style: 1px solid grey; margin-top: 5px; padding: 5px 0px;">
+						 			20,000,000-50,000,000
+						 </option>
+
+						 <option style="color:grey; font-family:Lato; border-bottom-style: 1px solid grey; margin-top: 5px; padding: 5px 0px;">
+						 				50,000,000-100,000,000
+						 </option>
+
+					</select>
+
+
+					<button class=" align-middle searchsubmit" type= "submit"> <img src="search1.png" width="25px">
+				 		
+					</button>
+                
+
+         		</form>
+
+
+	</div>
+
+	<!--Breadcrumb-->
+	<ul class="breadcrumb" style="background-color: white; border-bottom: 1px solid grey; border-radius:0px;		">
+		<li class="breadcrumb-item"><a href="new_index">Home</a></li>
+		<li class="breadcrumb-item active"><a href="catalog page">Catalog</a></li>
+	</ul>
+
+
+	<!-- top-heading -->
+	<div class="container-fluid" >
+
+
+
+
+		<h3 class="top-heading" > 2,300 Houses in <span> Catalog </span></h3>
+
+
+		<style type="text/css">
+			
+			.top-heading{
+				font-size: 20px;
+				font-family: Open sans;
+				font-weight: bolder;
+
+			}
+
+
+			@media only screen and (max-width: 500px){
+				.top-heading{
+					font-size: 16px
+				}
+
+
+
+			}
+
+		</style>
+
+	</div>
+
+
+
+
+
+	<!-- catalog -->
+	<div class="container-fluid" style= "  padding: 0px; ">
+
+		
+
+		<div class="card catalog-card" style="border-radius: 0px; text-align:left;">
+
+
+			<div id="houses-carousel" class="carousel slide" data-ride="carousel" style="height: 250px; overflow: hidden;">
+
+				<!-- indicators -->
+				<ul class="carousel-indicators">
+					<li data-target="#houses-carousel" data-slide-to= "0" class="active"></li>
+					<li data-target="#houses-carousel" data-slide-to= "1" ></li>
+					<li data-target="#houses-carousel" data-slide-to= "2" ></li>
+				</ul>
+
+				<!-- slide show -->
+				<div class="carousel-inner">
+
+					<div class="carousel-item active">
+						<img  class="images-card" src="house 1.jpg" alt="card image" style="width:100%; ">
+					</div>
+
+					<div class="carousel-item ">
+						<img  src="bg home.jpg" alt="card image" style="width:100%; ">
+					</div>
+
+					<div class="carousel-item ">
+						<img  src="house 1.jpg" alt="card image" style="width:100%; ">
+					</div>
+
+
+				</div>
+
+
+				<a class="carousel-control-prev " href="#houses-carousel" data-slide="prev" >
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+
+				<a class="carousel-control-next " href="#houses-carousel" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+
+
+			</div>
+
+
+
+			<div class="card-body " style="color:white; padding-bottom:15px;">
+				<h6 style="font-size: 13px; text-align:left;"> Four bedroom semi duplex with  bq </h6>
+				
+				
+				
+				<img  src="Location pin.png" alt="location"  width="10px;" style="display: inline; ">
+				<p style="font-size: 13px; text-align:left; display: inline; "> Magodo GRA Isheri</p>
+								<br>
+				
+				<div style="">
+					<h3  style="font-size: 25px;  text-align:left;"> N60M </h3>
+
+					<i class="fas fa-car"></i>
+					<i class="fas fa-couch"> </i>
+
+					<a href="tel: +2348136528554">
+						<p class= "bg-success p-2 text-white" style="font-size: 20px; display: inline; float: right;" >Buy now</p>
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	
+
+		<style type="text/css">
+
+			.catalog-card{
+				width:300px; 
+				text-align: center; 
+				margin: auto; 
+				background-color: black; 
+				border: none; 
+				display: inline-block;
+				margin: 10px;
+
+			}
+
+			@media only screen and (max-width: 500px){
+				.catalog-card{
+					width:93%; 
+					
+				}
+
+
+			}
+
+
+		</style>
+
+	</div>
+
+
+
+
+
+
+	<!-- pagination -->
+	<div class="container-fluid">
+		<ul class="pagination justify-content-center">
+			<li class="page-item disabled"><a class="page-link" href="javascript:void(0);"> Previous</a></li>
+			<li class="page-item"><a class="page-link" href="javascript:void(0);"> 1</a></li>
+			<li class="page-item"><a class="page-link" href="javascript:void(0);"> 2</a></li>
+			<li class="page-item"><a class="page-link" href="javascript:void(0);"> 3</a></li>
+			<li class="page-item"><a class="page-link" href="javascript:void(0);"> next</a></li>
+
+		</ul>
+	</div>
+
+
+
+	<!--footer sect  -->
+	<footer style="max-width: 100% ;background-color: black; text-align:center; padding: 20px">
+
+		<ul class=" devsize" style= "margin:auto; width: 100%; ">
+			<li style="display: inline-block;">
+				<a class= "  nav-link" href="#" style="font-family: open sans; color: white;"> Home </a>
+			</li>
+
+			<li style="display: inline-block;">
+				<a class= " nav-link" href="#" style="font-family: open sans;  color: white;"> Buy </a>
+			</li>
+
+			<li style="display: inline-block;">
+				<a class= "nav-link" href="#" style="font-family: open sans; color: white;"> Sell </a>
+			</li>
+
+			<li style="display: inline-block;">
+				<a class= "nav-link" href="#" style="font-family: open sans; color: white;"> Mortgage Calculator </a>
+			</li>
+			 
+		</ul>
+
+			<hr style="background-color: white; margin: 1px;">
+					
+
+			
+			<a href="tel: +2348136528554" class= "devsize" style="color: white;" > +2348136528554 </a>  
+	        <a href="tel: +2348136528554 " class= "devsize" style="color: white;"> +2348136528554 </a> 
+	        
+
+	        <br>
+
+	        <a href="mailto:ojomarvelous@gmail.com" class= "devsize" style="color: white; font-size: " > ojomarvelous@gmail.com </a>
+
+	        <br>
+
+	        <p class= "devsize" style="color: white;"> 341, Old abeokuta Express road, Agege,lagos </p>
+			<p class="devsize" style="color:white; margin-top:-10px;"> copyright &copy; 2019 Mainland houses &middot;  </p>
+
+
+
+
+
+			<a  href="https://api.whatsapp.com/send?phone=+2348136528554" style="text-decoration: none;">
+	            <img class="foot-icon" src="whatsapp icon grey.png" alt="whatsapp"  >
+	        </a>
+
+	        <a  href="#searchbox">
+	            <img class="foot-icon" src="instagram icon grey.png"alt="instagram" >
+	        </a>
+
+	        <a  href="#searchbox">
+	            <img class="foot-icon" src="twitter icon grey.png"alt="twitter">
+	        </a>
+	        <a  href="#searchbox">
+	            <img  class="foot-icon"src="facebook icon grey.png"alt="facebook" >
+	        </a>
+
+
+
+
+			<style type="text/css">
+
+				.foot-icon{
+					margin:5px;
+					margin-top:0px;
+					padding:2px;
+					max-width: 35px	;
+				}
+
+
+
+					
+		        @media only screen and (max-width: 768px){
+			 	.devsize{
+			   		font-size: 10px;
+
+
+			   }
+
+
+			   	.foot-icon{
+					margin:5px;
+					margin-top:0px;
+					padding:2px;
+					max-height: 25px;
+					max-width: 25px	;
+				}
+
+				}
+
+			   @media only screen and (max-width: 375px){
+			   .devsize{
+			   		font-size: 8px;
+
+			   }
+				}
+
+			</style>
+
+	</footer>
+
+
+</body>
+</html>

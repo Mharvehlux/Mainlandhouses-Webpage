@@ -1,0 +1,818 @@
+html{
+	
+	background-repeat: no-repeat;
+	}
+
+
+	
+
+
+	body{
+	margin:0px;
+	padding:0px;
+
+	}
+
+.main-div{
+	background-image: url("bg home.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0px;	
+	padding: 20px;
+	
+	}
+
+
+
+	.logomenu{
+	float:left;
+	}
+
+	#icon1{
+		display:block;
+	}
+	#icon2{
+		display:none;
+	}
+	
+
+
+	.navmenu{
+
+	position: relative;
+	margin-left:140px;
+	width:600px;
+	height: 80px;
+	display: inline-block;
+	
+	
+	
+
+	}
+
+	.list{
+	list-style-type: none;
+    overflow: hidden;
+    width:500px;
+    margin: auto;
+    margin-top: 5px;
+    position: absolute;
+    font-family: Dosis;
+    font-weight: bold;
+    font-size: 18.17px;
+    letter-spacing: 1px;
+    padding: 14px 45px;
+	}
+
+	.list li{
+	display: inline;
+	
+	}
+
+	.menu1{
+	color: white;
+	text-decoration: none;
+	margin: 15px;
+	border-radius: 3px;
+	transition: background-color 0.6s, border 0.6s, padding 0.6s; 
+	-webkit-transition: background-color 0.6s, border 0.6s, padding 0.6s;
+	
+	}
+
+	.menu1:hover{
+	/*background-color: rgba(255, 255, 255, 0.3);*/
+	border: 1px solid white ;
+	padding:3px;
+	}
+
+
+	.navmenuright{
+		float:right; 
+		height: 55.177px; 
+		padding:18px; 
+		display:inline-block;'
+	}
+
+
+	.nav-icon{
+	margin:10px;
+	padding:2px;
+	text-decoration: none;	
+	}
+
+
+	.top-icon{
+	width:20px;
+	height:20px;
+	transition: width 0.6s , height 0.6s; 
+	-webkit-transition: width 0.6s, height 0.6s;
+	}
+
+	.top-icon:hover{
+	height:22px;
+	width: 23px;
+	}
+
+
+
+
+	.landing-mid{
+	text-align: center;
+	margin-top: 150px;
+	color: white;
+	}
+
+	.main-text{
+		
+		text-shadow: 5px 5px 10px black;	
+	}
+
+	.sub-text {
+		font-family: dosis; 
+		font-size:24.71px; 
+		letter-spacing: 1px; 
+		margin:0px;	
+	}
+
+
+	.search-box{
+	margin: auto;
+	margin-top:100px;
+	display: block;
+	text-align: center;
+
+	}
+
+	.searchbox{
+	width: 400px;
+	background-color: black;
+	opacity: 0.5;
+	padding: 15px;
+	font-family: dosis;
+	font-size:17.36px;
+	border-radius:10px;
+	border: none;
+	margin-right:-10px;
+	display: inline;
+	z-index: -1;
+	color:white;
+	outline: none;
+
+	}
+
+
+
+
+	.search-box button{
+
+	margin-left: -15px;
+	cursor: pointer;
+	padding: 16px 20px ;
+	border-radius:10px;
+	background-color:black;
+	color:white;
+	border: none;
+	z-index: 1;
+    outline: none;
+
+   }
+
+ 
+   .here-link{
+   	color: red; 
+   	text-decoration: none;
+   	transition: color 0.3s; 
+	-webkit-transition: color 0.3s;
+   }
+
+   .here-link:hover{
+   	color: rgb(200, 0, 0);
+
+   }
+
+   .learn-link{
+   	font-size: 24.7px;
+   	padding:5px;
+   	width:185px;
+   	height:30px;
+   	margin:auto; 
+   	position:relative;
+   	border-radius: 3px;
+   	transition: border 0.5s, font-size 0.5s; 
+	-webkit-transition: border 0.5s, font-size 0.5s
+   }
+
+   .learn-link:hover{
+   	border: 1px solid white;
+   	font-size: 25.7px;
+   }
+
+
+   	/* for landing page*/
+
+@media only screen and (max-width: 820px){
+
+
+		.main-div{
+		background-repeat: no-repeat;
+		max-height:500px;
+		margin: 0px;	
+		padding: 15px 
+
+	
+		}
+		.sub-main-div{
+			text-align: center;
+		}
+		.logo-menu{
+			position: relative;
+			margin: auto;
+
+
+		}
+		#icon1{
+		display:none;
+		}
+		#icon2{
+		display:inline-block;
+		width:45px;
+
+
+		}
+
+
+
+	.navmenu{
+
+	position: relative;
+	margin: auto;
+	width:270px;
+	height: 60px;
+	display: inline-block;
+	text-align:center;
+	
+	
+
+	}
+
+
+
+	.list{
+	line-height: 50px;
+	margin-top: -1px;
+    width:270px;
+    height: 50px;
+    font-family: Dosis;
+    font-weight: normal;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 0px;
+    
+    
+	}
+
+	.list li{
+		
+	height:50px;
+	
+	}
+
+	.menu1{
+	margin: 4px;
+	color: white;
+	border-radius: 3px;
+	
+	
+	}
+
+	.nav-icon{
+	margin:10px;
+	padding:2px;
+	text-decoration: none;	
+	display: none;
+	}
+
+
+
+
+
+
+		.landing-mid{
+
+			width:100%;
+			margin-top:80px;
+			text-align:center;
+		}	
+
+		.main-text{ 
+			font-size: 25px;
+			
+		 }
+
+		 .sub-text {
+		 	margin-top: 10px;
+		 	font-size: 15px;
+		 	letter-spacing: 2px;
+		 }
+
+		 .search-box{
+		 	margin-top:20px;
+		 }
+
+		 .searchbox{
+		 	max-width: 200px;
+		 	
+		 }
+
+		}
+
+
+
+
+
+
+
+
+
+.houses-tab{
+	text-align: center;
+	max-width: 1353px;
+	padding: 20px;
+	
+	}
+
+
+
+ .sub-heading{
+ 	color: black;
+ 	 font-size:28px; 
+ 	 font-family: open sans;
+ }
+
+	.pre-swipe-card{
+	display: inline;
+
+	
+	}
+
+	
+	
+
+
+	.swipe-card{
+	margin: 30px 30px 30px 30px;
+	padding: 0px;
+	overflow:hidden;
+	max-width: 480px;
+	height: 550px;
+	border-radius: 10px;
+	display: inline-block;
+	position:relative;
+	transition: border 0.2s;
+	-webkit-transition: border 0.2s;
+	
+
+	}
+
+	.swipe-card:hover{
+
+		border: 2px solid black;
+	}
+
+
+
+
+	/* for java script reveal and hide */
+	.swipe-polaroid{
+	background-color: black;
+	width:;
+	opacity: 0.9px;
+	margin-top: -5px;
+	z-index: 1;
+	padding: 12px;
+
+	}
+
+	.card-texts{
+
+	color: white; 
+	font-size:18px; 
+	font-family: open sans; 
+	margin: 0px 0px;
+	}
+
+	.location-pin{
+		margin: 5px 0px 0px 0px;
+	}
+
+	.price{
+		color: white; 
+		font-size:44.51px; 
+		font-family: open sans; 
+		margin: 0px 0px 0px 10px;"
+	}
+
+
+
+	.hidden{
+
+	background-color: black;
+	background-color: 0 0 0 0.7;
+	padding: 50px;
+	position: relative;
+	display: none;
+	}
+
+
+	.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+	}
+
+	.close:hover,
+	.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+	}
+
+	#myImg{
+		margin: 0px; 
+		
+	}
+
+
+	.catalog-button{
+	color: black; 
+	/*background-color:black; */
+	font-family: open sans; 
+	font-size: 21px; 
+	text-decoration: none; 
+	letter-spacing: 1px; 
+	font-weight: 700; 
+	width: 200px;
+	margin: 100px, 0px;
+	text-decoration: none;  
+	border-radius: 5px; 
+	padding: 10px 20px;
+	transition: border 0.2s, padding 1s;
+	-webkit-transition: border 0.2s, padding 1s;
+	}
+
+
+	.catalog-button:hover{
+		border: 1px solid black;
+	}
+
+
+
+
+
+/* for catalog */
+
+@media only screen and (max-width: 820px){
+
+		.houses-tab{
+		text-align: center;
+		max-width: 100%;
+		padding:10px;
+		}
+
+
+
+		 .sub-heading{
+ 			color: black;
+ 			font-size:21px; 
+ 	 		font-family: open sans;
+		 }	
+			.pre-swipe-card{
+			display: block;
+
+	
+		}
+		.swipe-card{
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding: 0px;
+		overflow:fixed;
+		width: 250px;
+		height: 300px;
+		border-radius: 10px;
+		display: block;
+		
+		transition: border 0.2s;
+		-webkit-transition: border 0.2s;
+		
+
+		}
+
+		#myImg{
+			max-width: 250px; 
+		}
+
+		.card-texts{
+
+		color: white; 
+		font-size:10px; 
+		font-family: open sans; 
+		margin:0px 0px;
+		}
+
+
+		.location-pin{
+		margin: 5px 0px 0px 0px;
+		width:12px;
+		
+		}
+
+		.price{
+		color: white; 
+		font-size:20px; 
+		font-family: open sans; 
+		margin: 0px 0px 0px 10px;
+			}
+			
+
+		
+		.catalog-button{
+			font-size:15px;
+		}
+
+
+
+
+
+
+
+
+		}
+
+
+
+
+
+
+
+.agent-sec{
+
+	background-color: black;
+	
+	max-width: 1353px;
+	text-align: center;
+	padding:20px;
+	margin-top: 50px;
+	}
+
+
+	.agent-text{
+		color:white; 
+		font-family: open sans; 
+		font-size:17px;
+	}
+
+	.agent-tiles{
+	display: inline-block;
+	position: relative;
+	max-width:170px;
+	margin: 3px 25px;
+	padding:20px;
+	height: 270px;
+
+
+	}
+
+
+	.agent-images{
+		border-radius: 50%; 
+		width:165px; 
+		height:165px;"
+	}
+
+	.agent-name{
+		color:white; 
+		font-family: open sans; 
+		font-size:22px
+	}
+
+	.pcontact-icon{	
+	
+	margin: 10px;
+	width: 16px;
+	height: 25px;
+	transition: width 0.1s, height 0.1s; 
+	-webkit-transition: width 0.1s, height 0.1s;
+	}
+
+	
+
+
+
+	.icontact-icon{
+	
+	margin:10px;
+	width:25px;
+	height: 25px;
+	transition: width 0.1s , height 0.1s; 
+	-webkit-transition: width 0.1s, height 0.1s;
+	}
+
+
+/*agent tile*/
+
+@media only screen and (max-width: 820px){
+
+		.agent-sec{
+				
+
+		}
+		.agent-text{
+		color:white; 
+		font-family: open sans; 
+		font-size:12px;
+		}
+
+
+		.agent-tiles{
+		display: inline-block;
+		position: relative;
+		overflow: fixed;
+		width:100px;
+		margin: 3px 5px;
+		padding:20px;
+		height: 150px;
+		
+
+
+		}
+
+
+		.agent-images{
+			border-radius: 50%; 
+			width:70px; 
+			height:70px;"
+		}
+
+		.agent-name{
+		color:white; 
+		font-family: open sans; 
+		font-size:12px;
+		}
+
+
+
+
+
+
+
+
+		}
+
+
+
+
+
+
+
+
+.footer{
+	height: 200px;
+	background-color: #333333;
+	text-align: center;
+	margin:0px;
+	padding:10px;
+	max-width: 1353px;
+	
+
+	}
+
+	.navmenu-foot{
+	margin-top: 1px;
+	padding: 0px
+
+
+	}
+
+	.footer-menu{
+		margin-top: 5px; 
+		margin-bottom: 5px;
+		text-decoration: none; 
+		font-size: 19px; 
+		font-family: dosis; 
+		letter-spacing: 2px;
+		color: #999999;
+		transition:color 0.2;
+	-webkit-transition: color 0.2;
+	}
+
+	.footer-menu:hover{
+
+		color: white;
+	}
+	
+
+
+	.list1{
+	margin-left:-60px;
+	list-style-type: none;
+    margin-top: 10px;
+    font-family: Dosis;
+    font-size: 18.17px;
+    letter-spacing: 1px;
+    color: #999999;
+   
+	}
+
+	.menu2{
+	color: #999999;
+	text-decoration: none;
+	margin:15px 15px 15px 15px;
+	transition:color 0.2;
+	-webkit-transition: color 0.2;
+	}
+
+	.menu2:hover{
+		color: white;
+	}
+
+
+	.foot-right{
+	float: right;
+	border: 1px solid white;
+	}
+
+
+
+	.foot-icon{
+	margin:3px;
+	padding:2px;
+	float:right;
+	margin-top:14px;	
+	
+	}
+
+	.footer-note{
+	float: left;
+	font-family: open sans; 
+	font-size:18.17px;
+	font-weight: normal;
+	color: #999999;
+	 }
+
+
+
+@media only screen and (max-width: 820px){
+
+	.footer{
+		height: 140px;
+		padding:1px;
+	}
+
+		.footer-menu{
+		margin-top: 5px; 
+		margin-bottom: 5px;
+		text-decoration: none; 
+		font-size: 12px; 
+		font-family: open sans; 
+		letter-spacing: 0px;
+		color: #999999;
+		transition:color 0.2;
+	-webkit-transition: color 0.2;
+	}
+
+		.list1{
+	margin-left:-45px;
+	list-style-type: none;
+    margin-top: 5px;
+    font-family: open sans;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #999999;
+   
+	}
+	.menu2{
+	color: #999999;
+	text-decoration: none;
+	margin:3px 3px 3px 3px;
+	transition:color 0.2;
+	-webkit-transition: color 0.2;
+	}
+
+
+	.raeAE
+
+	.footer-note{
+	font-family: open sans; 
+	font-size:12px;
+	font-weight: normal;
+	color: #999999;
+	 }
+
+
+
+	}

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   <link rel="icon" href="home icon.png" type="image/x-icon">
+
+    <title>Mainlandhouses</title>
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- popper library -->
+	<script src="http://cdnjs.cloudfare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+	<!-- bootstrap offline link-->
+
+	<script type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script src="js/bootstrap.min.js"> </script>
+
+
+
+	<!--landing div style sheet  -->
+	<style>
+
+		.main-text{
+			text-shadow: 5px 5px 10px black;
+		}
+
+
+		.searchbox{
+			width: 400px;
+			background-color: black;
+			opacity: 0.5;
+			padding: 15px;
+			font-family: lato		;
+			font-size:17.36px;
+			border-radius:5px;
+			border: none;
+			display: inline;
+			color:white;
+			outline: none;
+		}
+
+		.selectbox{
+			width: 400px;
+			background-color: black;
+			opacity: 0.5;
+			padding: 15px;
+			font-family: lato		;
+			font-size:17.36px;
+			border-radius:5px;
+			border: none;
+			display: inline;
+			color:white;
+			outline: none;
+
+		}
+
+
+
+
+
+		.searchsubmit{
+			cursor: pointer;
+			color:white;
+			font-size: 20px;
+			font-family: lato;
+			padding: 1px 20px;
+			border-radius:5px;
+			background-color:black;
+			border: none;
+			outline: none;
+			display: inline;
+			height: 50px;
+			width: 200px;
+			margin-top: 10px;
+		}
+
+
+
+		
+		/* for screens <= 768px */
+		@media only screen and (max-width: 768px){
+		.searchbox{
+			max-width: 200px;
+			font-size: 10px;
+			padding: 10px;
+			margin-right:1px;
+		}
+
+		.selectbox{
+			 max-width: 120px;
+			 font-size: 10px;
+			 padding: 10px;
+			 margin-left: 1px;
+		}
+
+		.searchsubmit{
+			font-size: 15px;
+			height: 40px;
+			padding: 1px;
+		}
+
+		}
+
+
+		/*for screen <= 375px*/
+
+		@media only screen and (max-width: 375px){
+		.searchbox{
+			max-width: 150px;
+			font-size: 10px;
+			padding: 10px;
+			margin-right:1px;
+		}
+		.selectbox{
+			 max-width: 120px;
+			 font-size: 10px;
+			 padding: 10px;
+			 margin-left: 1px;
+		}
+
+		.searchsubmit{
+			padding: 5px
+			height: 20px;
+			font-size: 13px;
+		}
+
+		}	
+
+						
+	</style>
+
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+	
+
+	<!-- navigation bar section -->
+	<nav class="navbar navbar-expand-md navbar-dark" style="background-color: black; height: 70px;">
+		<a class="navbar-brand" href="new_index"> 
+		 	<img src="logo.png" alt="Logo" id= 'icon1' style="width:170px;">
+		</a>
+			
+
+		<button class ="navbar-toggler" type ="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="border: none;   ">
+	
+			<span class="navbar-toggler-icon" style ="width:20px;"> </span>
+
+		</button>
+
+			
+		<div class="collapse navbar-collapse " id="collapsibleNavbar" style=  "width:100%; " >
+			<ul class="navbar-nav" style= "margin:auto;">
+					<li class ="nav-item" style=";">
+						<a class= "nav-link" href="new_index" style="font-family: lato; color: white;"> Home </a>
+					</li>
+
+					<li class ="nav-item" style="margin-left:60px;">
+						<a class= "nav-link" href="#" style="font-family: Helvetica; font-weight:200px; color: white;"> Buy </a>
+					</li>
+
+					<li class ="nav-item" style="margin-left:60px;">
+						<a class= "nav-link" href="#" style="font-family: lato;color: white;"> Sell </a>
+					</li>
+
+					<li class ="nav-item" style="margin-left:60px;">
+						<a class= "nav-link" href="#" style="font-family: lato; color: white;"> Mortgage Calculator </a>
+					</li>
+					 
+			</ul>
+
+
+			<a class="nav-icon" href="tel: +2348136528554"><img src="telephone.png" alt="telephone"  style= "width:25px; float:right; margin-left: 22px;" >
+            </a>
+
+			<a class="nav-icon" href="#cart"><img src="shopping-cart.png" alt="shopping-cart"  style= "width:25px; float:right; margin-left: 22px;" >
+            </a>
+ 
+            <a class="nav-icon" href="#searchbox"><img src="search.png"alt="search" style= "width:25px; float:right; margin-left: 22px;">
+            </a>
+				
+		</div>
+			
+	</nav>
+
+
+
+	<!-- landing page main  -->
+	<div class= "container-fluid align-middle" style="background-image: url('bg-image.jpg'); background-size: cover;">
+
+		<div class= "row" style="padding-bottom: 60px;"> 
+			<div class="col">
+				<h2 class= "main-text shadow" style="color: white; font-size: 5vw; font-family:Lato; text-align:center; margin-top:100px; letter-spacing: 1px; margin-bottom: 30px; text-shadow: 2px 2px 5px black;" > Find and buy a home <br> conveniently in your city</h3>
+
+			
+				<form class= "align-middle" style="color: white; font-size: 4vw; font-family:Lato; text-align:center; padding: 10px; margin-top:10px;		">
+					<input id= "searchbox" class= " align-middle searchbox" type="text" name="" placeholder="Search for a city you want to live in"> 
+
+					</input>
+
+					<select class= ' align-middle 	selectbox'>
+						 <option selected style="color:grey; font-family:Lato; border-bottom-style: 1px solid grey; margin-top: 5px; padding: 5px 0px;">
+						 			-price range[=N=]-
+						 </option>
+
+						 <option style="color:grey; font-family:Lato; border-bottom-style: 1px solid grey; margin-top: 5px; padding: 5px 0px;">
+						 			10,000,000-20,000,000
+						 </option>
+
+						 <option style="color:grey;  font-family:Lato; border-bottom-style: 1px solid grey; margin-top: 5px; padding: 5px 0px;">
+						 			20,000,000-50,000,000
+						 </option>
+
+						 <option style="color:grey; font-family:Lato; border-bottom-style: 1px solid grey; margin-top: 5px; padding: 5px 0px;">
+						 				50,000,000-100,000,000
+						 </option>
+
+					</select>
+
+
+					<br>
+
+					<button class=" align-middle searchsubmit" type= "submit"> Search
+				 		
+					</button>
+                
+
+         		</form>
+
+			</div>
+
+		</div>
+			
+	</div>
+
+
+	
+	<!--things we offer scroll sect  -->
+	<div  class= " container-fluid shadow  bg-white border border-top-0   border-right-0  border-left-0"  style="border-color:grey; height:150px; overflow-x: 	scroll; overflow-y: hidden; white-space: nowrap; text-align: center">
+					
+		<div  class= "border border-top-0   border-bottom-0  border-left-0" style="color:#966000;   width:250px; height: 150px; display: inline-block;  padding:10px; ">
+
+			<img src="bar chart.png" width="60px;">
+			<h6 >2.5% Brokerage fee</h6>
+						
+		</div>
+
+					
+		<div  class= "border border-top-0   border-bottom-0  border-left-0" style="color:#966000;  width:250px;  height: 150px; display: inline-block; padding:10px; ">
+
+			<img src="calculator.png" width="50px;">
+			<h6>Mortgage calculator</h6>
+						
+		</div>
+
+		
+		<div  class= "border border-top-0   border-bottom-0  border-left-0" style="color:#966000;   width:250px;height: 150px; display: inline-block; padding:10px ;">
+						
+			<img src="layer.png" width="60px;">
+			<h6>Installment deals</h6>
+		</div>
+
+					
+		<div  class= "border border-top-0   border-bottom-0  border-left-0" style="color:#966000;  width:250px;height: 150px; display: inline-block; padding:10px; ">
+			<img src="flag.png" width="50px;">
+
+			<h6>Home inspection</h6>
+		</div>
+		
+	</div>
+
+
+
+
+
+
+
+	
+
+
+
+	<div style="text-align: center; margin-bottom: 60px;">
+
+
+		<!--featured property heading -->
+		<div style="background-color:#966000 ; width: 300px; margin: auto; padding: 2px; text-align: center; margin-top: 30px;   ">
+			<h3 style="font-family: Lato; color: white; font-size: 22px; font-weight: lighter;"> Featured Property </h3>
+		</div>
+
+
+
+		<!-- Featured Property sect -->
+		<div class="container-fluid" style= " overflow-x: scroll; overflow-y: hidden; white-space: nowrap; text-align: center; margin-bottom: 30px; ">
+
+		
+
+			<div class="card " style="width:300px; text-align: center; margin: auto; background-color: black; border: none; display: inline-block; margin: 30px;">
+				<img class="card-img-top" src="house 1.jpg" alt="card image" style="width:100%; ">
+
+				<div class="card-body" style="color:white; padding-bottom:0px;">
+					<h6> Four bedroom semi duplex with  bq </h6>
+					<img  src="Location pin.png" alt="location"  >
+					<p > Magodo GRA Isheri</p>
+					<h3 > 60M </h3>
+
+					<a href="tel: +2348136528554">
+						<p class= "bg-success p-2 text-white" style="font-size: 20px">Call now</p>
+					</a>
+				</div>
+
+			</div>
+
+			<div class="card " style="width:300px; text-align: center; margin: auto; background-color: black; border: none; display: inline-block; margin: 30px;">
+				<img class="card-img-top" src="house 1.jpg" alt="card image" style="width:100%; ">
+
+				<div class="card-body" style="color:white; padding-bottom:0px;">
+					<h6> Four bedroom semi duplex with  bq </h6>
+					<img  src="Location pin.png" alt="location"  >
+					<p > Magodo GRA Isheri</p>
+					<h3 > 60M </h3>
+
+					<a href="tel: +2348136528554">
+						<p class= "bg-success p-2 text-white" style="font-size: 20px">Call now</p>
+					</a>
+				</div>
+
+			</div>
+
+
+
+			<div class="card " style="width:300px; text-align: center; margin: auto; background-color: black; border: none; display: inline-block; margin: 30px;">
+				<img class="card-img-top" src="house 1.jpg" alt="card image" style="width:100%; ">
+
+				<div class="card-body" style="color:white; padding-bottom:0px;">
+					<h6> Four bedroom semi duplex with  bq </h6>
+					<img  src="Location pin.png" alt="location"> 
+					<p> Magodo GRA Isheri</p>
+					<h3 > 60M </h3>
+
+					<a href="tel: +2348136528554">
+						<p class= "bg-success p-2 text-white" style="font-size: 20px;">Call now</p>
+					</a>
+				</div>
+
+			</div>
+
+
+			<div class="card " style="width:300px; text-align: center; margin: auto; background-color: black; border: none; display: inline-block; margin: 30px;">
+				<img class="card-img-top" src="house 1.jpg" alt="card image" style="width:100%; ">
+
+				<div class="card-body" style="color:white; padding-bottom:0px;">
+					<h6> Four bedroom semi duplex with  bq </h6>
+					<img  src="Location pin.png" alt="location"  >
+					<p > Magodo GRA Isheri</p>
+					<h3 > 60M </h3>
+
+					<a href="tel: +2348136528554">
+						<p class= "bg-success p-2 text-white" style="font-size: 20px">Call now</p>
+					</a>
+				</div>
+
+			</div>	
+		</div>
+
+
+			<a href ="#" class="catalog-button" >  View our full catalog    </a>
+
+
+
+			<style type="text/css">
+					.catalog-button{
+						color: white; 
+						background-color:black; 
+						font-family: lato; 
+						font-size: 18px; 
+						text-decoration: none; 
+						letter-spacing: 1px; 
+						font-weight: lighter; 
+						width: 200px;
+						margin: auto;
+						padding: 10px 20px;
+						transition: border 0.2s, padding 1s;
+						-webkit-transition: border 0.2s, padding 1s;
+						}
+
+
+					.catalog-button:hover{
+						border: 1px solid black;
+						}
+
+
+
+			</style>
+	</div>
+
+
+	
+
+	<!--Top location sect  -->
+	<div style="background-color: black;  margin-top: 20px; padding:5px; 	" >
+
+		<div style="background-color:#966000 ; width: 300px; margin: auto; padding: 2px; text-align: center; margin-top:-20px;   ">
+			<h3 style=" color: white; font-size: 22px; font-weight:lighter;"> Top location </h3>
+		</div>
+		
+
+		<div style=" margin-top: 30px; text-align: center; margin-bottom: 50px">
+
+			<div class="tile" >
+				<img src="bg home.jpg" style="width:100%;  ">
+				<h3 class="tile-text"style=" color:white; font-family: Lato; font-weight: lighter; font-size: 25px;"> IKEJA </h3>
+			</div>
+
+			<div class="tile"  >
+				<img src="bg home.jpg" style="width:100%;  ">
+				<h3 class="tile-text" style=" color:white; font-family: Lato; font-weight: lighter; font-size: 25px;"> MAGODO </h3>
+			</div>
+
+			<div class="tile" >
+				<img src="bg home.jpg" style="width:100%;  ">
+				<h3 class="tile-text"style=" color:white; font-family: Lato; font-weight: lighter; font-size: 25px;"> SURULERE </h3>
+			</div>
+
+			<div class="tile"  >
+				<img src="bg home.jpg" style="width:100%; ">
+				<h3 class="tile-text"style=" color:white; font-family: Lato; font-weight: lighter; font-size: 25px;"> OJUELEGBA </h3>
+			</div>
+
+		</div>
+
+
+
+		<!--style sheet used for the  tiles  -->
+
+		<style type="text/css">
+			.tile{
+				width:300px ;
+				height: ;
+				margin:auto;
+				display: inline-block;
+				margin:-2px;
+				margin-bottom: 0px;
+
+			}
+
+			.tile-text{
+				margin-top: -90px;
+				margin-bottom: 50px;
+			}
+
+
+			/* for screen <= 768xpx*/
+			@media only screen and (max-width: 768px){
+				.tile{
+				width: 170px;
+				height:95.66px ;
+
+				}
+
+				.tile-text{
+				margin-top: -60px;
+			}
+
+		}
+			
+
+		</style>
+
+	</div>
+
+
+
+
+
+	<!--subsription sect  -->
+	<div style="background-color: #999999; text-align:center; padding: 20px">
+		<p style="font-size: 20px; margin-top: 20px;"> Enter your Email to get notified on new available listings</p>
+
+		<form class= "align-middle" style="color: white; font-family:Lato; text-align:center; padding: 10px; margin-top:10px;		">
+		 	<input class= " emailinput  " type="text" name="" placeholder="Enter your Email Address"> 
+
+		 	</input>
+
+			<select class= 'locationselect'>
+		 		<option selected style="color:grey; font-family:Lato; border-bottom-style: 1px solid grey; margin-top: 5px; padding: 5px 0px;">
+		 				-Location-
+		 		 </option>
+
+		 		 <option style="color:grey; font-family:Lato; border-bottom-style: 1px solid grey; margin-top: 5px; padding: 5px 0px;">
+		 				Ikoyi
+		 		 </option >
+
+		 		 <option style="color:grey;  font-family:Lato; border-bottom-style: 1px solid grey; margin-top: 5px; padding: 5px 0px;">
+		 				Ojuelegba
+		 		 </option>
+
+		 		 <option style="color:grey; font-family:Lato; border-bottom-style: 1px solid grey; margin-top: 5px; padding: 5px 0px;">
+		 				victoria island
+		 		 </option>
+
+			</select>
+				 	
+
+			<br>
+
+
+			<button class=" subscribesubmit  " type= "submit"> Subscribe
+				 		
+			</button>
+
+                
+        </form>
+
+        	<!-- style sheet  -->
+
+        <style type="text/css">
+            .emailinput{
+				width: 400px;
+				background-color: white;
+				
+				padding: 15px;
+				font-family: lato		;
+				font-size:17.36px;
+				border-radius:3px;
+				border: none;
+				display: inline;
+				color:grey;
+				outline: none;
+
+			}
+
+			.locationselect{
+				width: 400px;
+				background-color: white;
+				padding: 15px;
+				font-family: lato		;
+				font-size:17.36px;
+				border-radius:3px;
+				border: none;
+				display: inline;
+				color:grey;
+				outline: none;
+
+			}
+
+
+
+
+
+			.subscribesubmit{
+				cursor: pointer;
+				color:white;
+				margin-top:35px;
+				width:400px;
+				padding: 16px 20px;
+				border-radius:3px;
+				background-color:black;
+				border: none;
+			    outline: none;
+			}
+
+
+
+			@media only screen and (max-width: 768px){
+			.emailinput{
+			   	max-width: 170px;
+			   	font-size: 12px;
+			   	padding: 10px;
+			   	margin-right:1px;
+			}
+
+			.locationselect{
+			   	 max-width: 100px;
+			   	 font-size: 12px;
+			   	 padding: 10px;
+			   	 margin-left: 1px;
+			}
+
+			.subscribesubmit{
+			   	margin-top: 15px;
+			   	height: 50px;
+			   	width: 280px;
+			 }
+
+		 	 }
+            	
+
+      	</style>
+		
+
+	</div>
+
+
+
+	<!--footer sect  -->
+	<footer style="max-width: 100% ;background-color: black; text-align:center; padding: 20px">
+
+		<ul class=" devsize" style= "margin:auto; width: 100%; ">
+			<li style="display: inline-block;">
+				<a class= "  nav-link" href="#" style="font-family: open sans; color: white;"> Home </a>
+			</li>
+
+			<li style="display: inline-block;">
+				<a class= " nav-link" href="#" style="font-family: open sans;  color: white;"> Buy </a>
+			</li>
+
+			<li style="display: inline-block;">
+				<a class= "nav-link" href="#" style="font-family: open sans; color: white;"> Sell </a>
+			</li>
+
+			<li style="display: inline-block;">
+				<a class= "nav-link" href="#" style="font-family: open sans; color: white;"> Mortgage Calculator </a>
+			</li>
+			 
+		</ul>
+
+			<hr style="background-color: white; margin: 1px;">
+					
+
+			
+			<a href="tel: +2348136528554" class= "devsize" style="color: white;" > +2348136528554 </a>  
+	        <a href="tel: +2348136528554 " class= "devsize" style="color: white;"> +2348136528554 </a> 
+	        
+
+	        <br>
+
+	        <a href="mailto:ojomarvelous@gmail.com" class= "devsize" style="color: white; font-size: " > ojomarvelous@gmail.com </a>
+
+	        <br>
+
+	        <p class= "devsize" style="color: white;"> 341, Old abeokuta Express road, Agege,lagos </p>
+			<p class="devsize" style="color:white; margin-top:-10px;"> copyright &copy; 2019 Mainland houses &middot;  </p>
+
+
+
+
+
+			<a  href="https://api.whatsapp.com/send?phone=+2348136528554" style="text-decoration: none;">
+	            <img class="foot-icon" src="whatsapp icon grey.png" alt="whatsapp"  >
+	        </a>
+
+	        <a  href="#searchbox">
+	            <img class="foot-icon" src="instagram icon grey.png"alt="instagram" >
+	        </a>
+
+	        <a  href="#searchbox">
+	            <img class="foot-icon" src="twitter icon grey.png"alt="twitter">
+	        </a>
+	        <a  href="#searchbox">
+	            <img  class="foot-icon"src="facebook icon grey.png"alt="facebook" >
+	        </a>
+
+
+
+
+			<style type="text/css">
+
+				.foot-icon{
+					margin:5px;
+					margin-top:0px;
+					padding:2px;
+					max-width: 35px	;
+				}
+
+
+
+					
+		        @media only screen and (max-width: 768px){
+			 	.devsize{
+			   		font-size: 10px;
+
+
+			   }
+
+
+			   	.foot-icon{
+					margin:5px;
+					margin-top:0px;
+					padding:2px;
+					max-height: 25px;
+					max-width: 25px	;
+				}
+
+				}
+
+			   @media only screen and (max-width: 375px){
+			   .devsize{
+			   		font-size: 8px;
+
+			   }
+				}
+
+			</style>
+
+	</footer>
+		
+
+
+</body>
+
+
+</html>
