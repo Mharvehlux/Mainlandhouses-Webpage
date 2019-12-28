@@ -22,6 +22,12 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
+	<!-- awesome font -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400&display=swap" rel="stylesheet">
+
 
 
 	<!-- bootstrap offline link-->
@@ -95,14 +101,14 @@
 		/* for screens <= 768px */
 		@media only screen and (max-width: 768px){
 		.searchbox{
-			max-width: 200px;
+			max-width: 350px;
 			font-size: 10px;
 			padding: 10px;
 			margin-right:1px;
 		}
 
 		.selectbox{
-			 max-width: 120px;
+			 max-width: 350px;
 			 font-size: 10px;
 			 padding: 10px;
 			 margin-left: 1px;
@@ -119,7 +125,7 @@
 
 		/*for screen <= 375px*/
 
-		@media only screen and (max-width: 375px){
+		@media only screen and (max-width: 700px){
 		.searchbox{
 			max-width: 150px;
 			font-size: 10px;
@@ -158,7 +164,7 @@
 	
 
 	<!-- navigation bar section -->
-	<nav class="navbar navbar-expand-md navbar-dark" style="background-color: black; height: 70px;">
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black; ">
 		<a class="navbar-brand" href="new_index"> 
 		 	<img src="logo.png" alt="Logo" id= 'icon1' style="width:170px;">
 		</a>
@@ -171,35 +177,71 @@
 		</button>
 
 			
-		<div class="collapse navbar-collapse " id="collapsibleNavbar" style=  "width:100%; " >
-			<ul class="navbar-nav" style= "margin:auto;">
-					<li class ="nav-item" style=";">
-						<a class= "nav-link" href="new_index" style="font-family: lato; color: white;"> Home </a>
+		<div class="collapse navbar-collapse " id="collapsibleNavbar" style=  "width:100%;  " >
+			<ul class="navbar-nav" style= "margin:auto; ">
+					<li class ="nav-item top-menu" >
+						<a class= "nav-link " href="new_index" style="font-family: lato; font-weight: lighter; color: white; "> Home </a>
 					</li>
 
-					<li class ="nav-item" style="margin-left:60px;">
-						<a class= "nav-link" href="#" style="font-family: Helvetica; font-weight:200px; color: white;"> Buy </a>
+					<li class ="nav-item top-menu" >
+						<a class= "nav-link" href="#" style="font-family: lato; font-weight: lighter; color: white;"> Buy </a>
 					</li>
 
-					<li class ="nav-item" style="margin-left:60px;">
-						<a class= "nav-link" href="#" style="font-family: lato;color: white;"> Sell </a>
+					<li class ="nav-item top-menu" >
+						<a class= "nav-link" href="#" style="font-family: lato; font-weight: lighter; color: white;"> Sell </a>
 					</li>
 
-					<li class ="nav-item" style="margin-left:60px;">
-						<a class= "nav-link" href="#" style="font-family: lato; color: white;"> Mortgage Calculator </a>
+					<li class ="nav-item top-menu" >
+						<a class= "nav-link" href="#" style="font-family: lato; font-weight: lighter; color: white;"> Mortgage Calculator </a>
 					</li>
 					 
 			</ul>
 
 
-			<a class="nav-icon" href="tel: +2348136528554"><img src="telephone.png" alt="telephone"  style= "width:25px; float:right; margin-left: 22px;" >
+			<a class="nav-icon " href="tel: +2348136528554"><img class="top-icon"src="telephone.png" alt="telephone"   >
             </a>
 
-			<a class="nav-icon" href="#cart"><img src="shopping-cart.png" alt="shopping-cart"  style= "width:25px; float:right; margin-left: 22px;" >
+			<a class="nav-icon " href="#cart"><img class="top-icon" src="shopping-cart.png" alt="shopping-cart"  >
             </a>
  
-            <a class="nav-icon" href="#searchbox"><img src="search.png"alt="search" style= "width:25px; float:right; margin-left: 22px;">
+            <a class="nav-icon " href="#searchbox"><img class="top-icon" src="search.png"alt="search" >
             </a>
+
+
+
+
+            <style type="text/css">
+            	.top-menu{
+            		margin-left:60px;
+            		font-size:20px;
+            	}
+
+            	
+            	.top-icon{
+            		width:25px;
+            		float:right;
+            		margin-left: 22px;
+            	}
+
+
+				@media only screen and (max-width: 768px){
+					.top-menu{
+						padding-left:40px;
+						margin-left: 0px;
+						border-bottom: 1px solid grey;
+						font-size: 16px;
+					}
+
+					.top-icon{
+						width: 20px;
+						float:left;
+						margin-left:40px;
+						margin-top: 10px;
+					}
+				}
+
+
+            </style>
 				
 		</div>
 			
@@ -212,7 +254,7 @@
 
 		<div class= "row" style="padding-bottom: 60px;"> 
 			<div class="col">
-				<h2 class= "main-text shadow" style="color: white; font-size: 5vw; font-family:Lato; text-align:center; margin-top:100px; letter-spacing: 1px; margin-bottom: 30px; text-shadow: 2px 2px 5px black;" > Find and buy a home <br> conveniently in your city</h3>
+				<h2 class= "main-text shadow landing-text" style="" > Find and buy a home <br> conveniently in your city</h3>
 
 			
 				<form class= "align-middle" style="color: white; font-size: 4vw; font-family:Lato; text-align:center; padding: 10px; margin-top:10px;		">
@@ -249,6 +291,28 @@
 
          		</form>
 
+         		<style type="text/css">
+         			.landing-text{
+         				color: white; 
+         				font-size:70px; 
+         				font-family:Lato; 
+         				text-align:center; 
+         				margin-top:100px; 
+         				letter-spacing: 1px; 
+         				margin-bottom: 30px; 
+         				text-shadow: 2px 2px 5px black;
+         			}
+
+
+         			@media only screen and (max-width: 768px){
+         				.landing-text{
+         					font-size:25px;
+         				}
+         			}
+
+
+         		</style>
+
 			</div>
 
 		</div>
@@ -258,33 +322,33 @@
 
 	
 	<!--things we offer scroll sect  -->
-	<div  class= " container-fluid shadow  bg-white border border-top-0   border-right-0  border-left-0"  style="border-color:grey; height:150px; overflow-x: 	scroll; overflow-y: hidden; white-space: nowrap; text-align: center">
+	<div  class= " container-fluid shadow  bg-white border border-top-0   border-right-0  border-left-0"  style="border-color:grey; height:100px; overflow-x: 	scroll; overflow-y: hidden; white-space: nowrap; text-align: center">
 					
-		<div  class= "border border-top-0   border-bottom-0  border-left-0" style="color:#966000;   width:250px; height: 150px; display: inline-block;  padding:10px; ">
+		<div  class= "border border-top-0   border-bottom-0  border-left-0" style="color:#966000;   width:200px; height: 100px; display: inline-block;  padding:10px; ">
 
-			<img src="bar chart.png" width="60px;">
+			<img src="bar chart.png" width="40px;">
 			<h6 >2.5% Brokerage fee</h6>
 						
 		</div>
 
 					
-		<div  class= "border border-top-0   border-bottom-0  border-left-0" style="color:#966000;  width:250px;  height: 150px; display: inline-block; padding:10px; ">
+		<div  class= "border border-top-0   border-bottom-0  border-left-0" style="color:#966000;  width:200px;  height: 100px; display: inline-block; padding:10px; ">
 
-			<img src="calculator.png" width="50px;">
+			<img src="calculator.png" width="30px;">
 			<h6>Mortgage calculator</h6>
 						
 		</div>
 
 		
-		<div  class= "border border-top-0   border-bottom-0  border-left-0" style="color:#966000;   width:250px;height: 150px; display: inline-block; padding:10px ;">
+		<div  class= "border border-top-0   border-bottom-0  border-left-0" style="color:#966000;   width:200px;height: 100px; display: inline-block; padding:10px ;">
 						
-			<img src="layer.png" width="60px;">
+			<img src="layer.png" width="40px;">
 			<h6>Installment deals</h6>
 		</div>
 
 					
-		<div  class= "border border-top-0   border-bottom-0  border-left-0" style="color:#966000;  width:250px;height: 150px; display: inline-block; padding:10px; ">
-			<img src="flag.png" width="50px;">
+		<div  class= "border border-top-0   border-bottom-0  border-left-0" style="color:#966000;  width:200px;height: 100px; display: inline-block; padding:10px; ">
+			<img src="flag.png" width="30px;">
 
 			<h6>Home inspection</h6>
 		</div>
@@ -299,7 +363,7 @@
 
 	
 
-
+	<!--featured property sect -->
 
 	<div style="text-align: center; margin-bottom: 60px;">
 
@@ -316,69 +380,124 @@
 
 		
 
-			<div class="card " style="width:300px; text-align: center; margin: auto; background-color: black; border: none; display: inline-block; margin: 30px;">
-				<img class="card-img-top" src="house 1.jpg" alt="card image" style="width:100%; ">
-
-				<div class="card-body" style="color:white; padding-bottom:0px;">
-					<h6> Four bedroom semi duplex with  bq </h6>
-					<img  src="Location pin.png" alt="location"  >
-					<p > Magodo GRA Isheri</p>
-					<h3 > 60M </h3>
-
-					<a href="tel: +2348136528554">
-						<p class= "bg-success p-2 text-white" style="font-size: 20px">Call now</p>
-					</a>
+			<div class="card " style="width:250px; text-align: left; margin: auto; background-color: black; border: none; display: inline-block; margin: 30px;">
+				<div style="height: 200px; overflow: hidden;">
+					<img class="card-img-top" src="house 1.jpg" alt="card image" style="width:100%; height: 200px; ">
 				</div>
 
-			</div>
 
-			<div class="card " style="width:300px; text-align: center; margin: auto; background-color: black; border: none; display: inline-block; margin: 30px;">
-				<img class="card-img-top" src="house 1.jpg" alt="card image" style="width:100%; ">
+				<div class="card-body " style="color:white; padding-bottom:15px;">
+					<h6 style="font-size: 13px; text-align:left;"> Four bedroom semi duplex with  bq </h6>
+					
+					
+					
+					<img  src="Location pin.png" alt="location"  width="10px;" style="display: inline; ">
+					<p style="font-size: 13px; text-align:left; display: inline; "> Magodo GRA Isheri</p>
+									<br>
+					
+					<div style="">
+						<h3  style="font-size: 25px;  text-align:left;"> N60M </h3>
 
-				<div class="card-body" style="color:white; padding-bottom:0px;">
-					<h6> Four bedroom semi duplex with  bq </h6>
-					<img  src="Location pin.png" alt="location"  >
-					<p > Magodo GRA Isheri</p>
-					<h3 > 60M </h3>
+						<i class="fas fa-car"></i>
+						<i class="fas fa-couch"> </i>
 
-					<a href="tel: +2348136528554">
-						<p class= "bg-success p-2 text-white" style="font-size: 20px">Call now</p>
-					</a>
-				</div>
+						<a href="tel: +2348136528554">
+							<p class= "bg-success p-2 text-white" style="font-size: 20px; display: inline; float: right;" >Buy now</p>
+						</a>
+					</div>
 
-			</div>
-
-
-
-			<div class="card " style="width:300px; text-align: center; margin: auto; background-color: black; border: none; display: inline-block; margin: 30px;">
-				<img class="card-img-top" src="house 1.jpg" alt="card image" style="width:100%; ">
-
-				<div class="card-body" style="color:white; padding-bottom:0px;">
-					<h6> Four bedroom semi duplex with  bq </h6>
-					<img  src="Location pin.png" alt="location"> 
-					<p> Magodo GRA Isheri</p>
-					<h3 > 60M </h3>
-
-					<a href="tel: +2348136528554">
-						<p class= "bg-success p-2 text-white" style="font-size: 20px;">Call now</p>
-					</a>
 				</div>
 
 			</div>
 
 
-			<div class="card " style="width:300px; text-align: center; margin: auto; background-color: black; border: none; display: inline-block; margin: 30px;">
-				<img class="card-img-top" src="house 1.jpg" alt="card image" style="width:100%; ">
 
-				<div class="card-body" style="color:white; padding-bottom:0px;">
-					<h6> Four bedroom semi duplex with  bq </h6>
-					<img  src="Location pin.png" alt="location"  >
-					<p > Magodo GRA Isheri</p>
-					<h3 > 60M </h3>
+			<div class="card " style="width:250px; text-align: left; margin: auto; background-color: black; border: none; display: inline-block; margin: 30px;">
+				<div style="height: 200px; overflow: hidden;">
+					<img class="card-img-top" src="house 1.jpg" alt="card image" style="width:100%; height: 200px; ">
+				</div>
 
-					<a href="tel: +2348136528554">
-						<p class= "bg-success p-2 text-white" style="font-size: 20px">Call now</p>
-					</a>
+				<div class="card-body " style="color:white; padding-bottom:15px;">
+					<h6 style="font-size: 13px; text-align:left;"> Four bedroom semi duplex with  bq </h6>
+					
+					
+					
+					<img  src="Location pin.png" alt="location"  width="10px;" style="display: inline; ">
+					<p style="font-size: 13px; text-align:left; display: inline; "> Magodo GRA Isheri</p>
+									<br>
+					
+					<div style="">
+						<h3  style="font-size: 25px;  text-align:left;"> N60M </h3>
+
+						<i class="fas fa-car"></i>
+						<i class="fas fa-couch"> </i>
+
+						<a href="tel: +2348136528554">
+							<p class= "bg-success p-2 text-white" style="font-size: 20px; display: inline; float: right;" >Buy now</p>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+			<div class="card " style="width:250px; text-align: left; margin: auto; background-color: black; border: none; display: inline-block; margin: 30px;">
+				<div style="height: 200px; overflow: hidden;">
+					<img class="card-img-top" src="house 1.jpg" alt="card image" style="width:100%; height: 200px; ">
+				</div>
+
+				<div class="card-body " style="color:white; padding-bottom:15px;">
+					<h6 style="font-size: 13px; text-align:left;"> Four bedroom semi duplex with  bq </h6>
+					
+					
+					
+					<img  src="Location pin.png" alt="location"  width="10px;" style="display: inline; ">
+					<p style="font-size: 13px; text-align:left; display: inline; "> Magodo GRA Isheri</p>
+									<br>
+					
+					<div style="">
+						<h3  style="font-size: 25px;  text-align:left;"> N60M </h3>
+
+						<i class="fas fa-car"></i>
+						<i class="fas fa-couch"> </i>
+
+						<a href="tel: +2348136528554">
+							<p class= "bg-success p-2 text-white" style="font-size: 20px; display: inline; float: right;" >Buy now</p>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div class="card " style="width:250px; text-align: left; margin: auto; background-color: black; border: none; display: inline-block; margin: 30px;">
+				<div style="height: 200px; overflow: hidden;">
+					<img class="card-img-top" src="house 1.jpg" alt="card image" style="width:100%; height: 200px; ">
+				</div>
+
+				<div class="card-body " style="color:white; padding-bottom:15px;">
+					<h6 style="font-size: 13px; text-align:left;"> Four bedroom semi duplex with  bq </h6>
+					
+					
+					
+					<img  src="Location pin.png" alt="location"  width="10px;" style="display: inline; ">
+					<p style="font-size: 13px; text-align:left; display: inline; "> Magodo GRA Isheri</p>
+									<br>
+					
+					<div style="">
+						<h3  style="font-size: 25px;  text-align:left;"> N60M </h3>
+
+						<i class="fas fa-car"></i>
+						<i class="fas fa-couch"> </i>
+
+						<a href="tel: +2348136528554">
+							<p class= "bg-success p-2 text-white" style="font-size: 20px; display: inline; float: right;" >Buy now</p>
+						</a>
+					</div>
+
 				</div>
 
 			</div>	
@@ -422,7 +541,7 @@
 	<div style="background-color: black;  margin-top: 20px; padding:5px; 	" >
 
 		<div style="background-color:#966000 ; width: 300px; margin: auto; padding: 2px; text-align: center; margin-top:-20px;   ">
-			<h3 style=" color: white; font-size: 22px; font-weight:lighter;"> Top location </h3>
+			<h3 style=" font-family: lato; color: white; font-size: 22px; font-weight:lighter;"> Top location </h3>
 		</div>
 		
 
@@ -554,7 +673,7 @@
 			.locationselect{
 				width: 400px;
 				background-color: white;
-				padding: 15px;
+				padding: 17px;
 				font-family: lato		;
 				font-size:17.36px;
 				border-radius:3px;
@@ -594,7 +713,7 @@
 			.locationselect{
 			   	 max-width: 100px;
 			   	 font-size: 12px;
-			   	 padding: 10px;
+			   	 padding: 11px;
 			   	 margin-left: 1px;
 			}
 
@@ -618,20 +737,20 @@
 	<footer style="max-width: 100% ;background-color: black; text-align:center; padding: 20px">
 
 		<ul class=" devsize" style= "margin:auto; width: 100%; ">
-			<li style="display: inline-block;">
-				<a class= "  nav-link" href="#" style="font-family: open sans; color: white;"> Home </a>
+			<li style="display: inline-block; margin-left:-10px; padding: 0px;">
+				<a class= "  nav-link" href="#" style=" color: white;"> Home </a>
 			</li>
 
-			<li style="display: inline-block;">
-				<a class= " nav-link" href="#" style="font-family: open sans;  color: white;"> Buy </a>
+			<li style="display: inline-block; margin-left:-10px; padding: 0px;">
+				<a class= " nav-link" href="#" style="  color: white;"> Buy </a>
 			</li>
 
-			<li style="display: inline-block;">
-				<a class= "nav-link" href="#" style="font-family: open sans; color: white;"> Sell </a>
+			<li style="display: inline-block; margin-left:-10px; padding: 0px;">
+				<a class= "nav-link" href="#" style=" color: white;"> Sell </a>
 			</li>
 
-			<li style="display: inline-block;">
-				<a class= "nav-link" href="#" style="font-family: open sans; color: white;"> Mortgage Calculator </a>
+			<li style="display: inline-block; margin-left:-10px; padding: 0px; ">
+				<a class= "nav-link" href="#" style=" color: white;"> Mortgage Calculator </a>
 			</li>
 			 
 		</ul>
@@ -682,6 +801,7 @@
 					margin-top:0px;
 					padding:2px;
 					max-width: 35px	;
+					font-family:Lato;
 				}
 
 
@@ -689,7 +809,7 @@
 					
 		        @media only screen and (max-width: 768px){
 			 	.devsize{
-			   		font-size: 10px;
+			   		font-size: 13px;
 
 
 			   }
@@ -707,7 +827,7 @@
 
 			   @media only screen and (max-width: 375px){
 			   .devsize{
-			   		font-size: 8px;
+			   		font-size: 13px;
 
 			   }
 				}

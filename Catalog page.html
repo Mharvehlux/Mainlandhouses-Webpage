@@ -27,6 +27,9 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400&display=swap" rel="stylesheet">
+
 
 
 	<!-- bootstrap offline link-->
@@ -161,7 +164,7 @@
 	
 
 	<!-- navigation bar section -->
-	<nav class="navbar navbar-expand-md navbar-dark" style="background-color: black; height: 70px; ">
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black; ">
 		<a class="navbar-brand" href="new_index"> 
 		 	<img src="logo.png" alt="Logo" id= 'icon1' style="width:170px;">
 		</a>
@@ -174,39 +177,78 @@
 		</button>
 
 			
-		<div class="collapse navbar-collapse " id="collapsibleNavbar" style=  "width:100%; " >
-			<ul class="navbar-nav" style= "margin:auto;">
-					<li class ="nav-item" style=";">
-						<a class= "nav-link" href="new_index" style="font-family: lato; color: white;"> Home </a>
+		<div class="collapse navbar-collapse " id="collapsibleNavbar" style=  "width:100%;  " >
+			<ul class="navbar-nav" style= "margin:auto; ">
+					<li class ="nav-item top-menu" >
+						<a class= "nav-link " href="new_index" style="font-family: lato; font-weight: lighter; color: white; "> Home </a>
 					</li>
 
-					<li class ="nav-item" style="margin-left:60px;">
-						<a class= "nav-link" href="#" style="font-family: Helvetica; font-weight:200px; color: white;"> Buy </a>
+					<li class ="nav-item top-menu" >
+						<a class= "nav-link" href="#" style="font-family: lato; font-weight: lighter; color: white;"> Buy </a>
 					</li>
 
-					<li class ="nav-item" style="margin-left:60px;">
-						<a class= "nav-link" href="#" style="font-family: lato;color: white;"> Sell </a>
+					<li class ="nav-item top-menu" >
+						<a class= "nav-link" href="#" style="font-family: lato; font-weight: lighter; color: white;"> Sell </a>
 					</li>
 
-					<li class ="nav-item" style="margin-left:60px;">
-						<a class= "nav-link" href="#" style="font-family: lato; color: white;"> Mortgage Calculator </a>
+					<li class ="nav-item top-menu" >
+						<a class= "nav-link" href="#" style="font-family: lato; font-weight: lighter; color: white;"> Mortgage Calculator </a>
 					</li>
 					 
 			</ul>
 
 
-			<a class="nav-icon" href="tel: +2348136528554"><img src="telephone.png" alt="telephone"  style= "width:25px; float:right; margin-left: 22px;" >
+			<a class="nav-icon " href="tel: +2348136528554"><img class="top-icon"src="telephone.png" alt="telephone"   >
             </a>
 
-			<a class="nav-icon" href="#cart"><img src="shopping-cart.png" alt="shopping-cart"  style= "width:25px; float:right; margin-left: 22px;" >
+			<a class="nav-icon " href="#cart"><img class="top-icon" src="shopping-cart.png" alt="shopping-cart"  >
             </a>
  
-            <a class="nav-icon" href="#searchbox"><img src="search.png"alt="search" style= "width:25px; float:right; margin-left: 22px;">
+            <a class="nav-icon " href="#searchbox"><img class="top-icon" src="search.png"alt="search" >
             </a>
+
+
+
+
+            <style type="text/css">
+            	.top-menu{
+            		margin-left:60px;
+            		font-size:20px;
+            	}
+
+            	
+            	.top-icon{
+            		width:25px;
+            		float:right;
+            		margin-left: 22px;
+            	}
+
+
+				@media only screen and (max-width: 768px){
+					.top-menu{
+						padding-left:40px;
+						margin-left: 0px;
+						border-bottom: 1px solid grey;
+						font-size: 16px;
+					}
+
+					.top-icon{
+						width: 20px;
+						float:left;
+						margin-left:40px;
+						margin-top: 10px;
+					}
+				}
+
+
+            </style>
 				
 		</div>
 			
 	</nav>
+
+
+
 
 	<!-- search nbar -->
 	<div style="background-color: grey; border-bottom: 1px solid #cccccc; margin-top: 0px;  padding: 0px;">
@@ -410,24 +452,24 @@
 
 
 
-	<!--footer sect  -->
+		<!--footer sect  -->
 	<footer style="max-width: 100% ;background-color: black; text-align:center; padding: 20px">
 
 		<ul class=" devsize" style= "margin:auto; width: 100%; ">
-			<li style="display: inline-block;">
-				<a class= "  nav-link" href="#" style="font-family: open sans; color: white;"> Home </a>
+			<li style="display: inline-block; margin-left:-10px; padding: 0px;">
+				<a class= "  nav-link" href="#" style=" color: white;"> Home </a>
 			</li>
 
-			<li style="display: inline-block;">
-				<a class= " nav-link" href="#" style="font-family: open sans;  color: white;"> Buy </a>
+			<li style="display: inline-block; margin-left:-10px; padding: 0px;">
+				<a class= " nav-link" href="#" style="  color: white;"> Buy </a>
 			</li>
 
-			<li style="display: inline-block;">
-				<a class= "nav-link" href="#" style="font-family: open sans; color: white;"> Sell </a>
+			<li style="display: inline-block; margin-left:-10px; padding: 0px;">
+				<a class= "nav-link" href="#" style=" color: white;"> Sell </a>
 			</li>
 
-			<li style="display: inline-block;">
-				<a class= "nav-link" href="#" style="font-family: open sans; color: white;"> Mortgage Calculator </a>
+			<li style="display: inline-block; margin-left:-10px; padding: 0px; ">
+				<a class= "nav-link" href="#" style=" color: white;"> Mortgage Calculator </a>
 			</li>
 			 
 		</ul>
@@ -478,6 +520,7 @@
 					margin-top:0px;
 					padding:2px;
 					max-width: 35px	;
+					font-family:Lato;
 				}
 
 
@@ -485,7 +528,7 @@
 					
 		        @media only screen and (max-width: 768px){
 			 	.devsize{
-			   		font-size: 10px;
+			   		font-size: 13px;
 
 
 			   }
@@ -503,7 +546,7 @@
 
 			   @media only screen and (max-width: 375px){
 			   .devsize{
-			   		font-size: 8px;
+			   		font-size: 13px;
 
 			   }
 				}
@@ -511,6 +554,7 @@
 			</style>
 
 	</footer>
+		
 
 
 </body>
