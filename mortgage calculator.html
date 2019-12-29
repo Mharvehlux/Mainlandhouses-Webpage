@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   <link rel="icon" href="home icon.png" type="image/x-icon">
+
+    <title>Mainlandhouses</title>
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- popper library -->
+	<script src="http://cdnjs.cloudfare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<!-- awesome font -->
+	<link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+
+	<!-- bootstrap offline link-->
+
+	<script type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script src="js/bootstrap.min.js"> </script>
+
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400&display=swap" rel="stylesheet">
+
+
+	<!--style for slider -->
+	<style type="text/css">
+		
+		.slidecontainer {
+			  width: 100%;
+			}
+
+			.slider {
+			  -webkit-appearance: none;
+			  border-radius:100px;
+			  width: 100%;
+			  height: 30px;
+			  background: #d3d3d3;
+			  outline: none;
+			  opacity: 0.7;
+			  -webkit-transition: .2s;
+			  transition: opacity .2s;
+
+			}
+
+			.slider:hover {
+			  opacity: 1;
+			}
+
+			.slider::-webkit-slider-thumb {
+			  -webkit-appearance: none;
+			  appearance: none;
+			  width: 30px;
+			  height: 30px;
+			  background: #4CAF50;
+			  cursor: pointer;
+			  border-radius: 50%
+			}
+
+			.slider::-moz-range-thumb {
+			  width: 30px;
+			  height: 30px;
+			  background: #4CAF50;
+			  cursor: pointer;
+			  border-radius:1px;
+			}
+
+
+			.menu{
+						font-family: lato;  
+						font-weight:bold; 
+						display: inline;
+						font-size: 18px;
+					}
+					.menu-display{
+						 
+						border:1px solid #b7b7b7;
+						border-radius: 5px; 
+						padding:5px; 
+						padding-left:px;
+						width:200px;
+						height: 40px;
+						display: inline;
+						float:right;
+					}
+
+					@media only screen and (max-width: 768px){
+						.menu{
+							font-size: 12px;
+						}
+
+						.menu-display{
+						border:1px solid #b7b7b7;
+						border-radius: 5px; 
+						padding:5px; 
+						padding-left:px;
+						width:130px;
+					}
+						
+
+					}
+	</style>
+	
+
+</head>
+
+
+
+
+<body>
+
+		
+		<!-- navigation bar section -->
+
+
+
+
+
+			<!-- body -->
+		<div class="container-fluid" style="background-color:#F0F0F0; padding-bottom: 20px; margin-top: 0px; "> 
+
+			<div style="background-color:#966000 ; width: 300px; margin: auto; padding: 2px; text-align: center; margin-bottom:30px;  ">
+					<h3 style=" color: white; font-family:lato; font-size: 22px; font-weight:lighter;">Mortgage Calculator </h3>
+			</div>
+
+			
+
+			<div class="row p-1" style=" background-color:white; border-radius: 10px; margin:5px; ">
+
+				
+				<!-- Input sliders-->
+				<div class="col-md" style=" background-color:white; border-radius: 10px; padding:10px; ">
+
+					<form>
+						<!--monthly income-->
+						<div style="margin-bottom:20px; border-bottom:1px solid #b7b7b7; padding-bottom:10px;">
+							<p class= "menu" > Net Monthly Income </p>
+					
+
+							<div class="menu-display">
+									<p  style="font-family: lato; font-weight:bold; font-size: 17px; text-align: right;"> &#8358 <span id="monthly-income"> </span></p>
+							</div>
+
+
+							<div class="slidecontainer" style="margin-top: 30px;">
+							  <input type="range" min="2" max="200" value="10000000" class="slider" id="myRange">
+							  
+							</div>
+
+
+							<script>
+								var slider = document.getElementById("myRange");
+								var output = document.getElementById("monthly-income");
+								output.innerHTML = slider.value;
+
+								slider.oninput = function() {
+									 output.innerHTML = this.value + ",000,000";
+								}
+							</script>
+
+						</div>
+
+						<!--monthly expenses-->
+						<div style="margin-bottom:20px; border-bottom:1px solid #b7b7b7; padding-bottom:10px;">
+							<p class= "menu" > Estimated Monthly Expenses</p>
+					
+
+							<div class="menu-display">
+									<p  style="font-family: lato; font-weight:bold; font-size: 17px; text-align: right;"> &#8358 <span id="estmiated-monthly-expenses"> </span></p>
+							</div>
+
+
+							<div class="slidecontainer" style="margin-top: 30px;">
+							  <input type="range" min="2" max="200" value="10000000" class="slider" id="myRange1">
+							  
+							</div>
+
+
+							<script>
+								var slider = document.getElementById("myRange1");
+								var output1 = document.getElementById("estmiated-monthly-expenses");
+								output1.innerHTML = slider.value;
+
+								slider.oninput = function() {
+									 output1.innerHTML = this.value + ",000,000";
+								}
+							</script>
+						</div>
+
+						<!--tenure-->
+						<div style="margin-bottom:20px; border-bottom:1px solid #b7b7b7; padding-bottom:10px;">
+							<p class= "menu" > Tenure (years)</p>
+					
+
+							<div class="menu-display">
+									<p  style="font-family: lato; font-weight:bold; font-size: 17px; text-align: right;">  <span id="tenure"> </span></p>
+							</div>
+
+
+							<div class="slidecontainer" style="margin-top: 30px;">
+							  <input type="range" min="1" max="60" value="30" class="slider" id="myRange2">
+							  
+							</div>
+
+
+							<script>
+								var slider = document.getElementById("myRange2");
+								var output2 = document.getElementById("tenure");
+								output2.innerHTML = slider.value;
+
+								slider.oninput = function() {
+									 output2.innerHTML = this.value;
+								}
+							</script>
+						</div>
+					</form>
+
+				</div>
+
+		
+
+				<!--result of calc-->
+
+				<div class="col-md" style=" background-color:white; border-radius: 10px; padding: 5px; border: 1px solid #b7b7b7;  ">
+
+					<div class="align-center" style="background-color: #966000; padding: 20px; text-align: center; border-radius: 5px; padding-bottom: 20px;">
+						<i class="fas fa-check-circle fa-lg" style="color:white;"> </i>
+						<p style="color:white; font-family: lato; font-size: 18px; font-weight: bold; display: inline;"> You are Eligible for this Amount</p>
+
+						<hr style="border-color: #b7b7b7;">
+
+						<p style="color:white; font-family: lato; font-size: 16px; font-weight: bold; margin:0px;"> You can borrow upto</p>
+						<p style="color:white; font-family: lato; font-size:25px; font-weight: bold; "> &#8358 <span id="calc-result">25,000,000 </span></p>
+
+						<a href="tel: +2348136528554">
+							<p class= "bg-success p-2 text-white" style="font-size: 20px; border-radius:5px; " >Check out Pricing plans</p>
+						</a>
+
+					</div>
+
+				
+						
+
+				</div>
+			
+			</div>
+
+		</div>
+
+
+		<!--footer sect  -->
+	
+
+</body>
+</html>
