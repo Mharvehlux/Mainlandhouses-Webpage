@@ -82,50 +82,29 @@
 		.searchsubmit{
 			cursor: pointer;
 			color:white;
-			font-size: 20px;
+			font-size: 16px;
 			font-family: lato;
-			padding: 1px 20px;
-			border-radius:5px;
-			background-color:black;
-			border: none;
+			padding: 10px 20px;
+			background-color: transparent;
+			border-radius:50px;
+			border: 1px solid white;
 			outline: none;
 			display: inline;
-			height: 50px;
+			
 			width: 200px;
 			margin-top: 10px;
+
 		}
 
 
 
 		
-		/* for screens <= 768px */
+	
+
+
+		/*for screen = 768px*/
+
 		@media only screen and (max-width: 768px){
-		.searchbox{
-			max-width: 350px;
-			font-size: 10px;
-			padding: 10px;
-			margin-right:1px;
-		}
-
-		.selectbox{
-			 max-width: 350px;
-			 font-size: 10px;
-			 padding: 10px;
-			 margin-left: 1px;
-		}
-
-		.searchsubmit{
-			font-size: 15px;
-			height: 40px;
-			padding: 1px;
-		}
-
-		}
-
-
-		/*for screen <= 375px*/
-
-		@media only screen and (max-width: 700px){
 		.searchbox{
 			max-width: 150px;
 			font-size: 10px;
@@ -140,9 +119,10 @@
 		}
 
 		.searchsubmit{
-			padding: 5px
-			height: 20px;
+			padding: 5px;
+			
 			font-size: 13px;
+			width:100px;
 		}
 
 		}	
@@ -160,12 +140,12 @@
 
 
 
-<body>
+<body style="background-color:#eaeaea; font-family: lato;">
 	
 
 	<!-- navigation bar section -->
 	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black; ">
-		<a class="navbar-brand" href="new_index"> 
+		<a class="navbar-brand" href="new_index.html"> 
 		 	<img src="logo.png" alt="Logo" id= 'icon1' style="width:170px;">
 		</a>
 			
@@ -180,19 +160,19 @@
 		<div class="collapse navbar-collapse " id="collapsibleNavbar" style=  "width:100%;  " >
 			<ul class="navbar-nav" style= "margin:auto; ">
 					<li class ="nav-item top-menu" >
-						<a class= "nav-link " href="new_index" style="font-family: lato; font-weight: lighter; color: white; "> Home </a>
+						<a class= "nav-link " href="new_index" style="font-family: lato;  color: white; "> Home </a>
 					</li>
 
 					<li class ="nav-item top-menu" >
-						<a class= "nav-link" href="#" style="font-family: lato; font-weight: lighter; color: white;"> Buy </a>
+						<a class= "nav-link" href="#" style="font-family: lato;  color: white;"> Buy </a>
 					</li>
 
 					<li class ="nav-item top-menu" >
-						<a class= "nav-link" href="#" style="font-family: lato; font-weight: lighter; color: white;"> Sell </a>
+						<a class= "nav-link" href="#" style="font-family: lato;  color: white;"> Sell </a>
 					</li>
 
 					<li class ="nav-item top-menu" >
-						<a class= "nav-link" href="#" style="font-family: lato; font-weight: lighter; color: white;"> Mortgage Calculator </a>
+						<a class= "nav-link" href="#" style="font-family: lato;  color: white;"> Mortgage Calculator </a>
 					</li>
 					 
 			</ul>
@@ -264,7 +244,7 @@
 
 					<select class= ' align-middle 	selectbox'>
 						 <option selected style="color:grey; font-family:Lato; border-bottom-style: 1px solid grey; margin-top: 5px; padding: 5px 0px;">
-						 			-price range[=N=]-
+						 			price range
 						 </option>
 
 						 <option style="color:grey; font-family:Lato; border-bottom-style: 1px solid grey; margin-top: 5px; padding: 5px 0px;">
@@ -306,7 +286,7 @@
 
          			@media only screen and (max-width: 768px){
          				.landing-text{
-         					font-size:25px;
+         					font-size:22px;
          				}
          			}
 
@@ -322,39 +302,92 @@
 
 	
 	<!--things we offer scroll sect  -->
-	<div  class= " container-fluid shadow  bg-white border border-top-0   border-right-0  border-left-0"  style="border-color:grey; height:100px; overflow-x: 	scroll; overflow-y: hidden; white-space: nowrap; text-align: center">
+	<div  class= " main-sect container-fluid shadow border border-top-0   border-right-0  border-left-0"  >
 					
-		<div  class= "border border-top-0   border-bottom-0  border-left-0" style="color:#966000;   width:200px; height: 100px; display: inline-block;  padding:10px; ">
+		<div  class=  " card1 ">
 
-			<img src="bar chart.png" width="40px;">
-			<h6 >2.5% Brokerage fee</h6>
+			<img class="img1" src="bar chart.png" >
+			<p>2.5% Brokerage fee</p>
 						
 		</div>
 
 					
-		<div  class= "border border-top-0   border-bottom-0  border-left-0" style="color:#966000;  width:200px;  height: 100px; display: inline-block; padding:10px; ">
+		<div  class= "card1 ">
 
-			<img src="calculator.png" width="30px;">
-			<h6>Mortgage calculator</h6>
+			<img class="img1" src="calculator.png" >
+			<p>Mortgage calculator</p>
 						
 		</div>
 
 		
-		<div  class= "border border-top-0   border-bottom-0  border-left-0" style="color:#966000;   width:200px;height: 100px; display: inline-block; padding:10px ;">
+		<div  class= " card1 ">
 						
-			<img src="layer.png" width="40px;">
-			<h6>Installment deals</h6>
+			<img class="img1" src="layer.png" >
+			<p>Installment deals</p>
 		</div>
 
 					
-		<div  class= "border border-top-0   border-bottom-0  border-left-0" style="color:#966000;  width:200px;height: 100px; display: inline-block; padding:10px; ">
-			<img src="flag.png" width="30px;">
+		<div  class= " card1">
+			<img class="img1" src="flag.png" >
 
-			<h6>Home inspection</h6>
+			<p>Home inspection</p>
 		</div>
+
+
+		<style type="text/css">
+			.main-sect{
+				border-color:grey; 
+				height:100px;
+				 overflow-x: scroll; 
+				 overflow-y: hidden; 
+				 white-space: nowrap; 
+				 text-align: center; 
+				 font-size:13px;
+
+			}
+			.img1{
+				width:25px;
+			}
+			
+			.card1{
+				color:#966000;  
+				width:170px;
+				height: 100px; 
+				display: inline-block; 
+				padding:10px; 
+				white-space: normal;
+				border-right: 1px solid #966000;
+				
+			}
+
+
+
+			@media only screen and (max-width: 768px) {
+				.main-sect{
+					height: 65px;
+				}
+				.card1{
+					width:120px;
+					height: 70px; 
+					font-size: 11px;
+				}
+			}
+
+
+
+		</style>
 		
 	</div>
 
+
+
+
+
+
+
+
+
+		
 
 
 
@@ -370,7 +403,7 @@
 
 		<!--featured property heading -->
 		<div style="background-color:#966000 ; width: 300px; margin: auto; padding: 2px; text-align: center; margin-top: 30px;   ">
-			<h3 style="font-family: Lato; color: white; font-size: 22px; font-weight: lighter;"> Featured Property </h3>
+			<h3 style="font-family: Lato; color: white; font-size: 22px;"> Featured Property </h3>
 		</div>
 
 
@@ -380,14 +413,14 @@
 
 		
 
-			<div class="card " style="width:250px; text-align: left; margin: auto; background-color: black; border: none; display: inline-block; margin: 30px;">
+			<div class="card " style="width:250px; text-align: left; margin: auto; background-color: black; border: none; display: inline-block; margin: 30px; white-space: normal;">
 				<div style="height: 200px; overflow: hidden;">
 					<img class="card-img-top" src="house 1.jpg" alt="card image" style="width:100%; height: 200px; ">
 				</div>
 
 
 				<div class="card-body " style="color:white; padding-bottom:15px;">
-					<h6 style="font-size: 13px; text-align:left;"> Four bedroom semi duplex with  bq </h6>
+					<h6 style="font-size: 13px; text-align:left;"> Four bedroom semi duplex with bq</h6>
 					
 					
 					
@@ -511,22 +544,15 @@
 			<style type="text/css">
 					.catalog-button{
 						color: white; 
+						border-radius: 50px;
 						background-color:black; 
 						font-family: lato; 
-						font-size: 18px; 
+						font-size: 16px; 
 						text-decoration: none; 
 						letter-spacing: 1px; 
-						font-weight: lighter; 
 						width: 200px;
 						margin: auto;
-						padding: 10px 20px;
-						transition: border 0.2s, padding 1s;
-						-webkit-transition: border 0.2s, padding 1s;
-						}
-
-
-					.catalog-button:hover{
-						border: 1px solid black;
+						padding: 12px 20px;
 						}
 
 
@@ -541,29 +567,29 @@
 	<div style="background-color: black;  margin-top: 20px; padding:5px; 	" >
 
 		<div style="background-color:#966000 ; width: 300px; margin: auto; padding: 2px; text-align: center; margin-top:-20px;   ">
-			<h3 style=" font-family: lato; color: white; font-size: 22px; font-weight:lighter;"> Top location </h3>
+			<h3 style=" font-family: lato; color: white; font-size: 22px; "> Top location </h3>
 		</div>
 		
 
 		<div style=" margin-top: 30px; text-align: center; margin-bottom: 50px">
 
 			<div class="tile" >
-				<img src="bg home.jpg" style="width:100%;  ">
+				<img src="image 1.jpg" style="width:100%;  ">
 				<h3 class="tile-text"style=" color:white; font-family: Lato; font-weight: lighter; font-size: 25px;"> IKEJA </h3>
 			</div>
 
 			<div class="tile"  >
-				<img src="bg home.jpg" style="width:100%;  ">
+				<img src="image 2.jpg" style="width:100%;  ">
 				<h3 class="tile-text" style=" color:white; font-family: Lato; font-weight: lighter; font-size: 25px;"> MAGODO </h3>
 			</div>
 
 			<div class="tile" >
-				<img src="bg home.jpg" style="width:100%;  ">
+				<img src="image 3.jpg" style="width:100%;  ">
 				<h3 class="tile-text"style=" color:white; font-family: Lato; font-weight: lighter; font-size: 25px;"> SURULERE </h3>
 			</div>
 
 			<div class="tile"  >
-				<img src="bg home.jpg" style="width:100%; ">
+				<img src="image 4.jpg" style="width:100%; ">
 				<h3 class="tile-text"style=" color:white; font-family: Lato; font-weight: lighter; font-size: 25px;"> OJUELEGBA </h3>
 			</div>
 
@@ -579,8 +605,8 @@
 				height: ;
 				margin:auto;
 				display: inline-block;
-				margin:-2px;
-				margin-bottom: 0px;
+				margin:10px;
+				
 
 			}
 
@@ -595,6 +621,7 @@
 				.tile{
 				width: 170px;
 				height:95.66px ;
+				margin:3px;
 
 				}
 
@@ -692,9 +719,9 @@
 				cursor: pointer;
 				color:white;
 				margin-top:35px;
-				width:400px;
-				padding: 16px 20px;
-				border-radius:3px;
+				width:200px;
+				padding: 10px 20px;
+				border-radius:50px;
 				background-color:black;
 				border: none;
 			    outline: none;
@@ -719,8 +746,9 @@
 
 			.subscribesubmit{
 			   	margin-top: 15px;
-			   	height: 50px;
-			   	width: 280px;
+			   	height: 40px;
+			   	width: 170px;
+			   	padding: 1px;
 			 }
 
 		 	 }
